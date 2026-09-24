@@ -6,7 +6,12 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker
 BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_DB_PATH = BASE_DIR / "company_assets.db"
 
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DEFAULT_DB_PATH}")
+raw_url = os.getenv("DATABASE_URL", f"sqlite:///{DEFAULT_DB_PATH}")
+# Cloud providers like Render/Supabase often provide postgres:// which SQLAlchemy 2.0 requires as postgresql://
+if raw_url.startswith("postgres://"):
+    DATABASE_URL = raw_url.replace("postgres://", "postgresql://", 1)
+else:
+    DATABASE_URL = raw_url
 
 
 class Base(DeclarativeBase):
