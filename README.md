@@ -6,13 +6,17 @@
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0+-D71F00.svg?logo=sqlalchemy&logoColor=white)](https://www.sqlalchemy.org)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776AB.svg?logo=python&logoColor=white)](https://www.python.org)
 [![Tests](https://img.shields.io/badge/Pytest-23%20Passed-success.svg)](backend/tests)
+[![Interview Prep](https://img.shields.io/badge/Interview%20Prep-Master%20Guide%20Included-8A2BE2.svg)](PROJECT_EXPLANATION_AND_INTERVIEW_PREP.md)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 An internal enterprise asset tracking portal to catalog company-owned hardware equipment and software licenses, assign them to employees, enforce a deterministic availability state machine, manage return requests, and track servicing throughout the asset lifecycle.
 
+> 📚 **Technical Interview Prep:** Preparing for interviews regarding this project, its architecture, tech stack, and database? Read the comprehensive **[Project Explanation & Technical Interview Preparation Master Guide](PROJECT_EXPLANATION_AND_INTERVIEW_PREP.md)**!
+
 ---
 
 ## 📑 Table of Contents
+0. [Interview Preparation & Deep Dive Guide](PROJECT_EXPLANATION_AND_INTERVIEW_PREP.md)
 1. [Key Features](#-key-features)
 2. [Deterministic State Machine](#-deterministic-state-machine)
 3. [Architecture & Tech Stack](#-architecture--tech-stack)
